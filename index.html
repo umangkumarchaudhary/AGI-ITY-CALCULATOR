@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agility Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Agility Calculator</h1>
+        <form id="agility-form">
+            <label for="customer-name">Customer Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="product">Product:</label>
+            <input type="text" id="product" name="product" readonly>
+
+            <label for="fuel">Fuel:</label>
+            <input type="text" id="fuel" name="fuel" readonly>
+
+            <label for="ex-showroom">Ex-Showroom Price:</label>
+            <input type="number" id="ex-showroom" name="ex-showroom" required>
+
+            <label for="upfront-discount">Upfront Discount:</label>
+            <input type="number" id="upfront-discount" name="upfront-discount" required>
+
+            <label for="net-ex-showroom">Net Ex-Showroom Price:</label>
+            <input type="number" id="net-ex-showroom" name="net-ex-showroom" readonly>
+
+            <label for="finance-percentage">Finance on Asset (% of Net Ex-Showroom):</label>
+            <input type="number" id="finance-percentage" name="finance-percentage" required>
+
+            <label for="finance-on-asset">Finance on Asset (INR):</label>
+            <input type="number" id="finance-on-asset" name="finance-on-asset" readonly>
+
+            <label for="maintenance">Maintenance:</label>
+            <input type="number" id="maintenance" name="maintenance" required>
+
+            <label for="extended-warranty">Extended Warranty:</label>
+            <input type="number" id="extended-warranty" name="extended-warranty" required>
+
+            <label for="additional-finance">Additional Finance Amount:</label>
+            <input type="number" id="additional-finance" name="additional-finance" required>
+
+            <label for="total-finance">Total Finance Amount:</label>
+            <input type="number" id="total-finance" name="total-finance" readonly>
+
+            <label for="ltv">LTV:</label>
+            <input type="text" id="ltv" name="ltv" readonly>
+
+            <label for="commission-percentage">Commission Ploughback (% of Finance Amount):</label>
+            <input type="number" id="commission-percentage" name="commission-percentage" required>
+
+            <label for="commission-ploughback">Commission Ploughback (INR):</label>
+            <input type="number" id="commission-ploughback" name="commission-ploughback" readonly>
+
+            <label for="manufacturer-subvention">Manufacturer Subvention (Absolute INR):</label>
+            <input type="number" id="manufacturer-subvention" name="manufacturer-subvention" required>
+
+            <label for="dealer-subvention">Dealer Subvention (Absolute INR):</label>
+            <input type="number" id="dealer-subvention" name="dealer-subvention" required>
+
+            <label for="total-subvention">Total Subvention:</label>
+            <input type="number" id="total-subvention" name="total-subvention" readonly>
+
+            <label for="dfs-rate">DFS Operating Rate (%):</label>
+            <input type="number" id="dfs-rate" name="dfs-rate" required>
+
+            <label for="balloon">Balloon Payment (%):</label>
+            <input type="number" id="balloon" name="balloon" required>
+
+            <label for="balloon-amount">Balloon Payment Amount:</label>
+            <input type="number" id="balloon-amount" name="balloon-amount" readonly>
+
+            <label for="emi">EMI:</label>
+            <input type="number" id="emi" name="emi" readonly>
+
+            <button type="button" id="calculate">Calculate</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

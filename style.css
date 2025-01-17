@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f4f4f4; /* Light font color */
+}
+
+/* Container Styles */
+.calculator-container {
+    background: #1e1e1e; /* Dark gray background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Header */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* White text for the heading */
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f4f4f4; /* Light text color for labels */
+}
+
+/* Input Styles */
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444; /* Subtle border for inputs */
+    border-radius: 5px;
+    background-color: #2e2e2e; /* Darker input background */
+    color: #f4f4f4; /* Light text color for inputs */
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #007bff; /* Highlighted border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input[readonly] {
+    background-color: #3a3a3a; /* Slightly lighter background for readonly inputs */
+    color: #ccc; /* Muted text color for readonly inputs */
+}
+
+/* Button Styles */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff; /* Blue button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+}
